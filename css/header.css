@@ -27,7 +27,7 @@ header nav > h1 {
 }
 
 header nav > ul {
-	margin-top: 23px;
+	margin-top: 14px;
 	float: right;
 	display: inline-block;
 	font-size: 13pt;
@@ -37,5 +37,53 @@ header nav > ul {
 header nav > ul > li {
 	float: right;
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 20px;
+	border-radius: 4px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+header nav > ul > li:hover {
+	background: #B16161;
+}
+
+.hiddenBox {
+	position: fixed;
+	top: 50px;
+	z-index: 5;
+	width: 150px;
+	height: 20px;
+	display: block;
+}
+
+ul.children {
+	position: fixed;
+	z-index: 1;
+	background: #fff;
+	color: #fff;
+	padding: 5px 5px 5px 0px;
+	border-radius: 2px;
+	border: 1px solid #E6E6E6;
+}
+
+ul.children > li {
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+	padding: 10px 20px;
+	background: #C6C6C6;
+}
+
+ul.children > li:hover {
+	background: #B16161;
+}
+
+#tooltip {
+	position: fixed;
+	top: 60px;
+	left: 400px;
+	width: 200px;
+	height: 60px;
+	background: #fff;
+	border-radius: 2px;
 }

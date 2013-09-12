@@ -29,8 +29,9 @@
             <h1><a href="<?php echo get_bloginfo('url'); ?>">
             <?php echo get_bloginfo('name'); ?></a></h1>
 
-            <ul><?php wp_list_pages('title_li=&depth=1'); ?></ul>
+            <ul><?php wp_list_pages('title_li=&depth=2'); ?></ul>
         </nav>
     </header>
     
+
     <div id="main_wrapper">

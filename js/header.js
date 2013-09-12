@@ -27,5 +27,46 @@ jQuery(document).ready(function($) {
 	$('#slider .sliderNext').bind('click', nextSlide);
 	$('#slider .sliderPrev').bind('click', prevSlide);
 	
+
+	$("header > nav > ul > li").each( function() { 
+		
+		var self = $(this);
+		var originalWidth = self.width();
+		var children = self.find('.children').appendTo($('body')).offset({left: self.offset().left - 150 + self.width()/2 });
+		
+		if(children.length > 0) {
+			var hiddenBox = $('<div/>')
+				.attr({class: 'hiddenBox'})
+				.width(children.innerWidth())
+				.offset({left: children.offset().left });
+
+			var onHoverIn = function() {
+				self.stop().animate({ width: 150 }, function() {
+					if(children.length > 0) {
+						children.stop().animate({top: 74});
+						hiddenBox.appendTo($('body'));
+					}
+				});
+
+				setTimeout(onHoverOut, 2000);
+			}
+
+			var onHoverOut = function() {
+				if(!(self.is(':hover') || children.is(':hover') || hiddenBox.is(':hover'))) {
+					children.stop().animate({top: 0});
+					hiddenBox.remove();
+					self.stop().animate({ width: originalWidth });
+				} else {
+					setTimeout(onHoverOut, 2000);
+				}
+			}
+
+			self.hover(onHoverIn, onHoverOut);
+			children.hover(onHoverIn, onHoverOut);
+			hiddenBox.hover(onHoverIn, onHoverOut);
+		}
+
+	});
+
 });
 
