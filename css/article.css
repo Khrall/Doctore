@@ -1,0 +1,109 @@
+/* ARTICLE CSS */
+
+article ul.meta {
+	margin: 20px 0 50px;
+	font-size: 9pt;
+}
+
+article ul.meta > li {
+	display: inline-block;
+	float: left;
+	margin-right: 40px;
+}
+
+article ul.meta > li > span {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: -2px;
+}
+
+article ul.meta > li.author > span { background: transparent url('../img/metaIcons.png'); }
+article ul.meta > li.date > span { background: transparent url('../img/metaIcons.png') -16px 0; }
+article ul.meta > li.comments > span { background: transparent url('../img/metaIcons.png') -48px 0; }
+
+article {
+	padding: 40px;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11pt;
+}
+
+article h1, article h2, article h3 {
+	margin-top: 50px;
+	color: #B67B7B;
+}
+
+article h1.title {
+	margin: 10px 0 30px;
+	font-size: 40pt;
+}
+
+article h1 {
+	font-size: 40pt;
+	margin-bottom: 15px;
+}
+
+article h2 {
+	font-size: 28pt;
+	margin-bottom: 10px;
+}
+
+article h3 {
+	font-size: 20pt;
+	margin-bottom: 5px;
+}
+
+article p {
+	margin-bottom: 40px;
+	line-height: 30px;
+}
+
+article a {
+	color: #BB817C;
+	font-weight: bold;
+}
+
+article a:hover {
+	color: #B44738;
+}
+
+article .content ul {
+	margin-bottom: 35px;
+	padding-left: 4em; 
+}
+
+article .content ul > li {
+    text-indent: -23px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+article .content ul > li:before {
+    content: "■ ";
+    color: #BB817C;
+    position: relative;
+    margin-right: 10px;
+    top: -2px;
+}
+
+article ol {
+	list-style-type: decimal;
+	margin-bottom: 35px;
+	padding-left: 4em;
+}
+
+article ol > li {
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+
+article img {
+	width: 798px;
+	height: auto;
+	border-radius: 2px;
+	border: 10px solid #DDDDDD;
+	margin: 0 auto 20px;
+}

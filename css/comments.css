@@ -1,0 +1,122 @@
+/* COMMENTS CSS */
+
+
+#commentsHeader span {
+	color: #B67B7B;
+	font-size: 12pt;
+	padding: 10px 40px;
+	background: #D8D8D8;
+}
+
+ul#comments {
+	list-style: none;
+}
+
+ul#comments > li {
+	margin-top: 40px;
+}
+
+ul#comments > li > div {
+	float: left;
+	display: inline-block;
+}
+
+ul#comments .avatar img {
+	width: 64px;
+	height: 64px;
+	border: 5px solid #EBEBEB;
+	margin-right: 20px;
+}
+
+ul#comments .author {
+	width: 200px;
+	padding-top: 10px;
+	line-height: 20px;
+}
+
+ul#comments .author span {
+	font-weight: bold;
+	color: #B67B7B;
+}
+
+ul#comments .author small {
+	font-size: 10pt;
+}
+
+ul#comments .comment {
+	margin-top: 5;
+	padding-left: 20px;
+	width: 500px;
+	border-left: 1px solid #BBB;
+}
+
+ul#comments .comment p {
+	font-size: 10pt;
+	line-height: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#commentform > div {
+	float: left;
+	display: inline-block;
+}
+
+#commentform p {
+	margin-bottom: 5px;
+}
+
+#commentform .author {
+	margin-right: 40px;
+	width: 250px;
+}
+
+#commentform .name {
+	background: #D8D8D8;
+	font-size: 13pt;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	font-weight: bold;
+	width: 252px;
+	color: #B67B7B;
+}
+
+#commentform .response {
+	width: 490px;
+}
+
+#commentform textarea {
+	width: 100%;
+	max-height: 200px;
+	resize: vertical;
+}
+
+#commentform #submit {
+	background: #A8A8A8;
+	color: #fff;
+	cursor: pointer;
+	width: 252px;
+}
+
+#commentform #submit:hover {
+	background: #B67B7B;
+}
+
+input {
+	font-weight: bold;
+	width: 213px;
+}
+
+input, textarea {
+	background: #D8D8D8;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	color: #B67B7B;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+	background: #E7E7E7;
+	color: #8A8A8A;
+}

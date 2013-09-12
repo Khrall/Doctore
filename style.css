@@ -1,0 +1,95 @@
+/*
+Theme Name: 	Doctore
+Theme URI: 		
+Description: 	Simple WordPress theme with flat design
+Version: 		2.0
+Author: 		Raymi T. Eldby
+Author URI: 	http://folk.ntnu.no/raymite
+Tags: 			
+*/
+
+@import url('css/reset.css');
+@import url('css/general.css');
+@import url('css/header.css');
+@import url('css/slider.css');
+@import url('css/flat-box.css');
+@import url('css/article.css');
+@import url('css/comments.css');
+
+#frontPosts {
+	padding: 0 40px;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11pt;
+}
+
+#frontPosts > li {
+	margin-top: 40px;
+	display: none;
+}
+
+#frontPosts > li.page-0 {
+	display: block;
+}
+
+#frontPosts .thumb img {
+	width: 300px;
+	border: 10px solid #DDDDDD;
+	height: auto;
+}
+
+#frontPosts .thumb, #frontPosts .content {
+	float: left;
+	display: inline-block;
+}
+
+#frontPosts .content {
+	width: 450px;
+	margin-left: 40px;
+}
+
+#frontPosts .content h2 {
+	font-size: 28pt;
+	color: #B67B7B;
+	margin: 10px 0;
+}
+
+#frontPosts .content p {
+	font-size: 10pt;
+	line-height: 25px;
+	margin: 0;
+}
+
+#frontPosts .content .actions {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #B67B7B;
+}
+
+#frontPosts .content .actions:hover {
+	color: #A84E4E;
+}
+
+#frontPosts .dottedLine {
+	margin: 40px 0 10px;
+}
+
+#frontPostsNav {
+	padding: 0 40px;
+	margin-top: 15px;
+	height: 60px;
+}
+
+#frontPostsNav > li {
+	margin-right: 5px;
+	padding: 8px 15px;
+	color: #fff;
+	background: #B1B1B1;
+	float: left;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#frontPostsNav > li:hover, #frontPostsNav > li.active {
+	background: #B67B7B;
+}

@@ -1,0 +1,78 @@
+/* GENERAL CSS */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: JockeyOne;
+	src: url('../fonts/JockeyOne-Regular.ttf') format('truetype');
+}
+
+body,
+input,
+textarea { 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13pt;
+}
+
+body {
+	background: #CCCCCC;
+}
+
+::-moz-selection {
+	background-color: #C97F7F;
+	color: #fff;
+}
+ 
+::selection {
+	background-color: #C97F7F;
+	color: #fff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: JockeyOne;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#main_wrapper {
+	width: 900px;
+	margin: 100px auto 40px;
+}
+
+.contentBox {
+	margin-top: 40px;
+	background: #fff;
+	border: 1px solid #E6E6E6;
+	border-radius: 2px;
+}
+
+div.dottedLine {
+	width: 100%;
+	height: 1px;
+	border-top: 1px dashed #BBB;
+	margin: 30px 0;
+}
+
