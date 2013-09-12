@@ -52,12 +52,14 @@ header nav > ul > li:hover {
 	top: 50px;
 	z-index: 5;
 	width: 150px;
-	height: 20px;
+	height: 26px;
 	display: block;
 }
 
 ul.children {
 	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 1;
 	background: #fff;
 	color: #fff;

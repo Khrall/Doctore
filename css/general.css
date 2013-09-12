@@ -29,11 +29,21 @@ body {
 }
 
 ::-moz-selection {
+	background-color: none;
+	color: inherit;
+}
+ 
+::selection {
+	background-color: none;
+	color: inherit;
+}
+
+article ::-moz-selection {
 	background-color: #C97F7F;
 	color: #fff;
 }
  
-::selection {
+article ::selection {
 	background-color: #C97F7F;
 	color: #fff;
 }
